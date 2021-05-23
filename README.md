@@ -25,8 +25,8 @@ O agendamento de consulta é a funcão principal, inicialmente pede o nome do m�
 As funções Localização e  Horário de Funcionamento apenas mostram as informações e retornam ao inicio. 
 A função Recado para o Médico pede nome do médico e o recado, retornando ao inicio.
 Agendar Exames, pede se o exame é laboratorial ou de imagem, apresenta menssagem que esta encaminhando para setor responsável.
-Atendente apena apresenta mensagem que esta sendo transferido para atendente.
-Sair apenas se despede.
+Atendente apenas apresenta mensagem que esta sendo transferido para atendente.
+Sair, apenas se despede.
 
 ## Arquivos do projeto
 
