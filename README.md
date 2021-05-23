@@ -1,17 +1,17 @@
-## Chatbot para Hospital Clinica.
+# Chatbot para Hospital Clinica.
 Trabalho da Disciplina de Chatbots
 
 
 **Autores: Charles Bambineti e Diego Leonardo Urban**
 
 
-#Tecnologias utilizadas
+## Tecnologias utilizadas
 Tentamos inicialmente usar o sistema Rasa,mas depois de muitas dificuldades migramos para o IBM Watson Assistan.
 Utilizamos o webservice viacep.com.br para buscar um endereço pelo CEP informado pelo usuário, Uma Cloud Functions da IBM é chamada por um  WebHooks.
 Para o sistema de métricas foi utilizado o Google Colab.
 
 
-# O fucionamento
+## O fucionamento
 Foi criado um chatbot para atendimento em um hospital clinica, o usuário terá  as seguinte sopções iniciais:
 - Agendar Consulta
 - Agendar Exames
@@ -28,7 +28,11 @@ Agendar Exames, pede se o exame é laboratorial ou de imagem, apresenta menssage
 Atendente apena apresenta mensagem que esta sendo transferido para atendente.
 Sair apenas se despede.
 
-# Fluxo de Diálogo
+## Arquivos do projeto
 
+- Arquivo JSON  (skill-AGENDAMENTO_CHATBOTSv5.json)
+- Métricas no Google Colab: (https://colab.research.google.com/drive/19DrLrpCVZYGxdfnwgY_shpEC9BHjUmeC?usp=sharing)
+
+## Fluxo de Diálogo
 
 ![Fluxo de Diálogo](chatbot.png)
