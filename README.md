@@ -30,7 +30,7 @@ Sair apenas se despede.
 
 ## Arquivos do projeto
 
-- Arquivo JSON  (/skill-AGENDAMENTO_CHATBOTSv5.json)
+- Arquivo JSON ['skill-AGENDAMENTO_CHATBOTSv5.json'] (skill-AGENDAMENTO_CHATBOTSv5.json)
 - Métricas no Google Colab: (https://colab.research.google.com/drive/19DrLrpCVZYGxdfnwgY_shpEC9BHjUmeC?usp=sharing)
 
 ## Fluxo de Diálogo
