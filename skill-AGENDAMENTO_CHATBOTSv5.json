@@ -1,0 +1,1974 @@
+{
+  "intents": [
+    {
+      "intent": "afirmativo",
+      "examples": [
+        {
+          "text": "afirmativo"
+        },
+        {
+          "text": "claro que sim"
+        },
+        {
+          "text": "positivo"
+        },
+        {
+          "text": "sim"
+        },
+        {
+          "text": "tenho"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "atendente",
+      "examples": [
+        {
+          "text": "me passa para uma pessoa."
+        },
+        {
+          "text": "não quero falar com um robô!"
+        },
+        {
+          "text": "prefiro falar com um humano."
+        },
+        {
+          "text": "Quero um atendente."
+        },
+        {
+          "text": "transfere para um atendente humano."
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "consulta",
+      "examples": [
+        {
+          "text": "Agendar com o Dr."
+        },
+        {
+          "text": "consulta"
+        },
+        {
+          "text": "doutor"
+        },
+        {
+          "text": "Eu gostaria de agendar consulta"
+        },
+        {
+          "text": "Eu quer marcar uma consulta"
+        },
+        {
+          "text": "Marcar um médico."
+        },
+        {
+          "text": "médico"
+        },
+        {
+          "text": "Preciso marcar uma consulta"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "exames",
+      "examples": [
+        {
+          "text": "Eu preciso agendar alguns exames"
+        },
+        {
+          "text": "exames"
+        },
+        {
+          "text": "Gostaria de marcar um exame."
+        },
+        {
+          "text": "Preciso fazer exames de imagem."
+        },
+        {
+          "text": "Quero fazer exame de sangue, urina e fezes ."
+        },
+        {
+          "text": "Quero marcar alguns exames"
+        },
+        {
+          "text": "Tenho exame de sangue pra fazer."
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "exames_imagem",
+      "examples": [
+        {
+          "text": "chapa"
+        },
+        {
+          "text": "Eco"
+        },
+        {
+          "text": "Eu necessito agendar um ecocardiograma."
+        },
+        {
+          "text": "Gostaria de marcar uma tomografia computadorizada."
+        },
+        {
+          "text": "imagem"
+        },
+        {
+          "text": "Preciso bater um Raio X."
+        },
+        {
+          "text": "Preciso fazer uma ressonância magnética."
+        },
+        {
+          "text": "Quero marcar um Ultrassonografia."
+        },
+        {
+          "text": "raio x"
+        },
+        {
+          "text": "ressonância"
+        },
+        {
+          "text": "tomografia"
+        },
+        {
+          "text": "ultrason"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "exames_laboratoriais",
+      "examples": [
+        {
+          "text": "Eu gostaria de agendar um exame laboratorial."
+        },
+        {
+          "text": "exames de sangue, urina e fezes."
+        },
+        {
+          "text": "gostaria marcar exames de sangue, urina e fezes."
+        },
+        {
+          "text": "laboratorio"
+        },
+        {
+          "text": "Preciso coletar sangue."
+        },
+        {
+          "text": "Quero marcar um exame de sangue."
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "horario_funcionamento",
+      "examples": [
+        {
+          "text": "Qual horário estão funcionando ?"
+        },
+        {
+          "text": "Qual horas que fecha?"
+        },
+        {
+          "text": "Que horário estão aberto?"
+        },
+        {
+          "text": "Que horas abre ?"
+        },
+        {
+          "text": "trabalha aos sábados ou domingo ?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "localização",
+      "examples": [
+        {
+          "text": "fica aonde ?"
+        },
+        {
+          "text": "Onde é ?"
+        },
+        {
+          "text": "Onde fica?"
+        },
+        {
+          "text": "Qual a localização do hospital ?"
+        },
+        {
+          "text": "Qual local ?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "negativo",
+      "examples": [
+        {
+          "text": "não"
+        },
+        {
+          "text": "não tenho"
+        },
+        {
+          "text": "negativo"
+        },
+        {
+          "text": "nenhum"
+        },
+        {
+          "text": "particular"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "recado",
+      "examples": [
+        {
+          "text": "Gostaria de deixar um recado para o médico"
+        },
+        {
+          "text": "Gostaria de enviar um recado para o dr."
+        },
+        {
+          "text": "preciso dar um recado para o médico"
+        },
+        {
+          "text": "preciso deixar uma mensagem para o doutor."
+        },
+        {
+          "text": "Quero mandar um recado para o doutor"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "sair",
+      "examples": [
+        {
+          "text": "Adeus"
+        },
+        {
+          "text": "Até+"
+        },
+        {
+          "text": "Até mais!"
+        },
+        {
+          "text": "Sair"
+        },
+        {
+          "text": "Tchau"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "confirmacao",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "nao",
+          "synonyms": [
+            "negativo",
+            "nope"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "sim",
+          "synonyms": [
+            "ok",
+            "positivo",
+            "yes"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "confirmar",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Confirmar",
+          "synonyms": [
+            "Afirmar",
+            "Manter"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "consulta",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Consulta",
+          "synonyms": [
+            "atendimento"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "dias_semanas",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "qualquer",
+          "synonyms": [
+            "nenhum",
+            "qualquer",
+            "tanto faz"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "quarta",
+          "synonyms": [
+            "qua",
+            "quarta",
+            "quarta-feira"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "quinta",
+          "synonyms": [
+            "qui",
+            "quinta",
+            "quinta-feira"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "segunda",
+          "synonyms": [
+            "seg",
+            "segunda",
+            "segunda-feira"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "sexta",
+          "synonyms": [
+            "sex",
+            "sexta",
+            "sexta-feira"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "terça",
+          "synonyms": [
+            "ter",
+            "terça",
+            "terça-feira"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "exames",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "exames",
+          "synonyms": [
+            "exames"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "exames_tipos",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Imagem",
+          "synonyms": [
+            "chapa",
+            "de imagem",
+            "Ecocardiograma",
+            "radiografia",
+            "raiox",
+            "Ressonância",
+            "Tomografia",
+            "ultrassom",
+            "ultrassonografia"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Laboratoriais",
+          "synonyms": [
+            "fezes ",
+            "laboratório",
+            "sangue",
+            "urina"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "horario",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Horário",
+          "synonyms": [
+            "Horário de Atendimento"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "localizacao",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Localização",
+          "synonyms": [
+            "Endereço",
+            "Local"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "medico",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Dra. Angela Machado",
+          "synonyms": [
+            "angela",
+            "Dra Machado"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Dra. Clarice Tatiana Correia",
+          "synonyms": [
+            "Clarice",
+            "Correia",
+            "Tatiana"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Dr. Augusto Faria",
+          "synonyms": [
+            "Augusto",
+            "Faria"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Dr. Diego Maradona",
+          "synonyms": [
+            "Diego",
+            "Maradona"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Dr. João Machado",
+          "synonyms": [
+            "Dr Machado",
+            "João"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "paciente",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Não",
+          "synonyms": [
+            "não",
+            "não lembro",
+            "nunca"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Sim",
+          "synonyms": [
+            "já",
+            "sim",
+            "sou paciente"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "periodo",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Matutino",
+          "synonyms": [
+            "antes de meio dia",
+            "de manhã",
+            "manhã"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Qualquer",
+          "synonyms": [
+            "Qualquer",
+            "tanto faz"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Vespertino",
+          "synonyms": [
+            "a tarde",
+            "depois de meio-dia",
+            "tarde"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "plano",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "não",
+          "synonyms": [
+            "não",
+            "não tenho plano"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "sim",
+          "synonyms": [
+            "sim",
+            "sim tenho plano"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "plano_operadora",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Amil",
+          "synonyms": [
+            "Amil"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Bradesco",
+          "synonyms": [
+            "Bradesco",
+            "Bradesco Saúde"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Unimed",
+          "synonyms": [
+            "Unimed"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "recado",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Recado",
+          "synonyms": [
+            "Aviso",
+            "Mensagem"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "webhooks": [
+    {
+      "url": "https://us-south.functions.appdomain.cloud/api/v1/web/durban%40furb.br_dev/default/consulta_cep.json",
+      "name": "main_webhook",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Basic NjViNWI2YTYtYzFmZS00ZmM4LThjMDgtYzYwYjYzMGY1NjIyOnBFb0FCNWowdVkwN0lzaEhtUXlNT0JvTjNhVTZwMlZzY29DdmFaTDZiVzlsbGlUd3pTUGJUWlFiWGpKUjVBQzE="
+        }
+      ]
+    }
+  ],
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "title": "Seja Bem-Vindo(a) ao Hospital Dia a Dia! Eu sua a Enia, sua assistente virtual, como posso lhe ajudar? 😊",
+            "options": [
+              {
+                "label": "Agendar Consulta",
+                "value": {
+                  "input": {
+                    "text": "consulta"
+                  }
+                }
+              },
+              {
+                "label": "Agendar Exames ",
+                "value": {
+                  "input": {
+                    "text": "exames"
+                  }
+                }
+              },
+              {
+                "label": "Horário de Funcionamento",
+                "value": {
+                  "input": {
+                    "text": "horário"
+                  }
+                }
+              },
+              {
+                "label": "Localização",
+                "value": {
+                  "input": {
+                    "text": "localização"
+                  }
+                }
+              },
+              {
+                "label": "Recado para o Médico",
+                "value": {
+                  "input": {
+                    "text": "recado"
+                  }
+                }
+              },
+              {
+                "label": "Atendente",
+                "value": {
+                  "input": {
+                    "text": "atendente"
+                  }
+                }
+              },
+              {
+                "label": "Sair",
+                "value": {
+                  "input": {
+                    "text": "sair"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi. Você pode tentar reformular a frase."
+              },
+              {
+                "text": "Você pode reformular sua afirmação? Eu não estou entendendo."
+              },
+              {
+                "text": "Eu não entendi o sentido."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_4_1621126541806",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "Escolha um periodo de preferencia:",
+            "options": [
+              {
+                "label": "Matutino",
+                "value": {
+                  "input": {
+                    "text": "matutino"
+                  }
+                }
+              },
+              {
+                "label": "Verspertino",
+                "value": {
+                  "input": {
+                    "text": "vespertino"
+                  }
+                }
+              },
+              {
+                "label": "Qualquer",
+                "value": {
+                  "input": {
+                    "text": "qualquer"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_1_1621126767366",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1621126767387",
+      "previous_sibling": "handler_9_1621126767387"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "",
+            "options": [],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_3_1618670869981",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1618671031362",
+      "previous_sibling": "slot_4_1621106824606"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Não temos esse médico no nosso quadro.."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_4_1621106824606",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1621106824608",
+      "previous_sibling": "handler_6_1621106824608"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_8_1621701272181",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1621701597096"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1621703059904",
+      "context": {
+        "medico": "@medico"
+      },
+      "conditions": "@medico",
+      "event_name": "input",
+      "dialog_node": "handler_1_1621703059932"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_3_1621107089482",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1621118345454",
+      "previous_sibling": "node_9_1621687843877"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_7_1621700661207",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1621703059237"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_4_1621126541806",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1621126766884"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1621212642368",
+      "context": {
+        "plano_operadora": "@plano_operadora"
+      },
+      "conditions": "@plano_operadora",
+      "event_name": "input",
+      "dialog_node": "handler_3_1621212642387"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1621687432578",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1621687432608",
+      "previous_sibling": "handler_5_1621687432608"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_4_1621687523087",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1621687523089",
+      "previous_sibling": "handler_8_1621687523089"
+    },
+    {
+      "type": "event_handler",
+      "parent": "node_1_1621189637582",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1621190566526",
+      "previous_sibling": "node_9_1621192504119"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_8_1621190567064",
+      "event_name": "input",
+      "dialog_node": "handler_4_1621190567086"
+    },
+    {
+      "type": "event_handler",
+      "parent": "node_1_1621126731211",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1621211375968"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1621687432578",
+      "context": {
+        "exames_tipos": "#exames_laboratoriais"
+      },
+      "conditions": "#exames_laboratoriais",
+      "event_name": "input",
+      "dialog_node": "handler_5_1621687432608"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1621106824606",
+      "context": {
+        "medico": "@medico"
+      },
+      "conditions": "@medico",
+      "event_name": "input",
+      "dialog_node": "handler_6_1621106824608"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_2_1621211376528",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1621211376552",
+      "previous_sibling": "handler_9_1621211376552"
+    },
+    {
+      "type": "event_handler",
+      "parent": "node_9_1621212604192",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1621212641816"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1621190567064",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1621190567086",
+      "previous_sibling": "handler_4_1621190567086"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1621687523087",
+      "context": {
+        "exames_imagem": "#exames_imagem"
+      },
+      "conditions": "#exames_imagem",
+      "event_name": "input",
+      "dialog_node": "handler_8_1621687523089"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Não conhecemos esse médico"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_1_1621703059904",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1621703059932",
+      "previous_sibling": "handler_1_1621703059932"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1621126767366",
+      "context": {
+        "periodo": "@periodo"
+      },
+      "conditions": "@periodo",
+      "event_name": "input",
+      "dialog_node": "handler_9_1621126767387"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1621211376528",
+      "context": {
+        "dias_semanas": "@dias_semanas"
+      },
+      "conditions": "@dias_semanas",
+      "event_name": "input",
+      "dialog_node": "handler_9_1621211376552"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "Escolha qual sua operadora de plano de saúde.",
+            "options": [
+              {
+                "label": "Unimed",
+                "value": {
+                  "input": {
+                    "text": "unimed"
+                  }
+                }
+              },
+              {
+                "label": "Amil",
+                "value": {
+                  "input": {
+                    "text": "amil"
+                  }
+                }
+              },
+              {
+                "label": "Bradesco",
+                "value": {
+                  "input": {
+                    "text": "bradesco"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_9_1621212642368",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1621212642387",
+      "previous_sibling": "handler_3_1621212642387"
+    },
+    {
+      "type": "frame",
+      "title": "escolher_dia",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Você escolheu consulta com $medico suas preferências são período  $periodo em uma $dias_semanas, vou transferir você para  a secretaria do médico para finalizar o agendamento."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1621126541806",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1621687968788"
+      },
+      "conditions": "true",
+      "dialog_node": "node_1_1621126731211",
+      "previous_sibling": "slot_1_1621126767366"
+    },
+    {
+      "type": "standard",
+      "title": "registra_dados",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Qual seu nome ?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "true",
+      "dialog_node": "node_1_1621189637582",
+      "previous_sibling": "node_5_1621198182375"
+    },
+    {
+      "type": "standard",
+      "title": "registra_cpf",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Qual o CEP do seu endereço ?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1621198661809",
+      "context": {
+        "cpf": "<?input.text?>"
+      },
+      "conditions": "true",
+      "dialog_node": "node_1_1621198896651"
+    },
+    {
+      "type": "standard",
+      "title": "regista plano sim",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Qual sua operadora de plano de saúde?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1621212138510",
+      "conditions": "#afirmativo",
+      "dialog_node": "node_1_1621212211198"
+    },
+    {
+      "type": "standard",
+      "title": "consulta cep",
+      "output": {},
+      "parent": "node_5_1621387391938",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "cep": "$cep"
+          },
+          "result_variable": "webhook_result_1"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "true",
+      "dialog_node": "node_1_1621387326743"
+    },
+    {
+      "type": "standard",
+      "title": "exames de imagem",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok, estamos lhe encaminhando para o setor de exames de imagem."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1621107089482",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1621687968788"
+      },
+      "conditions": "@exames_tipos:Imagem",
+      "dialog_node": "node_1_1621687583817"
+    },
+    {
+      "type": "standard",
+      "parent": "node_5_1621198182375",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1621212138510"
+      },
+      "conditions": "@paciente:Sim",
+      "dialog_node": "node_2_1621198838583",
+      "previous_sibling": "node_3_1621198661809"
+    },
+    {
+      "type": "standard",
+      "title": "Transferir Atendente",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Agradeço seu contato, um de nossos atendentes logo ira lhe atender,  por favor aguarde... "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "dialog_node": "node_2_1621687968788",
+      "previous_sibling": "node_3_1621703486537"
+    },
+    {
+      "type": "frame",
+      "title": "registra_medico",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1618670154675",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1621189637582"
+      },
+      "conditions": "true",
+      "dialog_node": "node_3_1618670869981",
+      "previous_sibling": "node_7_1621700661207"
+    },
+    {
+      "type": "frame",
+      "title": "registra_exames",
+      "parent": "node_8_1618670154675",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "true",
+      "dialog_node": "node_3_1621107089482",
+      "previous_sibling": "node_3_1618670869981"
+    },
+    {
+      "type": "standard",
+      "title": "já é paciente",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Certo, vamos precisar de alguns dados pessoais. <br>\nPor gentileza, informe o número do ceu CPF."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1621198182375",
+      "conditions": "@paciente:Não",
+      "dialog_node": "node_3_1621198661809"
+    },
+    {
+      "type": "standard",
+      "title": "podemos_ajudar_mais",
+      "output": {
+        "generic": [
+          {
+            "title": "Posso lhe ajudar em mais alguma coisa? 😊",
+            "options": [
+              {
+                "label": "Agendar Consulta",
+                "value": {
+                  "input": {
+                    "text": "consulta"
+                  }
+                }
+              },
+              {
+                "label": "Agendar Exames ",
+                "value": {
+                  "input": {
+                    "text": "exames"
+                  }
+                }
+              },
+              {
+                "label": "Horário de Funcionamento",
+                "value": {
+                  "input": {
+                    "text": "horário"
+                  }
+                }
+              },
+              {
+                "label": "Localização",
+                "value": {
+                  "input": {
+                    "text": "localização"
+                  }
+                }
+              },
+              {
+                "label": "Recado para o Médico",
+                "value": {
+                  "input": {
+                    "text": "recado"
+                  }
+                }
+              },
+              {
+                "label": "Atendente",
+                "value": {
+                  "input": {
+                    "text": "atendente"
+                  }
+                }
+              },
+              {
+                "label": "Sair",
+                "value": {
+                  "input": {
+                    "text": "sair"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_8_1618670154675"
+      },
+      "conditions": "welcome",
+      "dialog_node": "node_3_1621703486537",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "frame",
+      "title": "marcar_horario",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Você tem algum dia da semana de preferencia ?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "true",
+      "dialog_node": "node_4_1621126541806",
+      "previous_sibling": "node_1_1621189637582"
+    },
+    {
+      "type": "standard",
+      "title": "regista plano não",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok, será particular então, seguimos com o agendamento."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1621212138510",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1621126541806"
+      },
+      "conditions": "#negativo",
+      "dialog_node": "node_4_1621212454113",
+      "previous_sibling": "node_1_1621212211198"
+    },
+    {
+      "type": "standard",
+      "title": "registra_não paciente",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Você já é paciente do Hospital Dia a Dia ?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "true",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_5_1621198182375",
+      "previous_sibling": "node_9_1621212138510"
+    },
+    {
+      "type": "standard",
+      "title": "registra cep",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aguarde um momento, estou checando esse CEP..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1621198896651",
+      "context": {
+        "cep": "<?input.text?>"
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "true",
+      "dialog_node": "node_5_1621387391938"
+    },
+    {
+      "type": "standard",
+      "title": "registra data nascimento",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1621192504119",
+      "context": {
+        "nascimento": "<?input.text?>"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1621198182375"
+      },
+      "conditions": "true",
+      "dialog_node": "node_7_1621193057351"
+    },
+    {
+      "type": "standard",
+      "title": "registra número endereço",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1621387326743",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1621212138510"
+      },
+      "conditions": "true",
+      "dialog_node": "node_7_1621381816025"
+    },
+    {
+      "type": "frame",
+      "title": "recado_medico",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Deixe seu recado:"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1618670154675",
+      "context": {},
+      "conditions": "true",
+      "dialog_node": "node_7_1621700661207"
+    },
+    {
+      "type": "standard",
+      "title": "registra_opcao",
+      "parent": "Bem-vindo",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "true",
+      "dialog_node": "node_8_1618670154675"
+    },
+    {
+      "type": "standard",
+      "title": "confirma_recado",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Recado enviado para $medico ."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1621700661207",
+      "context": {},
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_3_1621703486537"
+      },
+      "conditions": "true",
+      "dialog_node": "node_8_1621701272181",
+      "previous_sibling": "slot_1_1621703059904"
+    },
+    {
+      "type": "standard",
+      "title": "registra_nome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Qual sua data de nascimento $nome ?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1621189637582",
+      "context": {
+        "nome": "<?input.text?>"
+      },
+      "conditions": "true",
+      "dialog_node": "node_9_1621192504119"
+    },
+    {
+      "type": "standard",
+      "title": "registra_plano",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Você vai usar algum plano de saúde ?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "true",
+      "dialog_node": "node_9_1621212138510",
+      "previous_sibling": "node_2_1621687968788"
+    },
+    {
+      "type": "frame",
+      "title": "regista_plano_saude",
+      "output": {
+        "generic": [
+          {
+            "title": "",
+            "options": [],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1621212211198",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1621126541806"
+      },
+      "conditions": "true",
+      "dialog_node": "node_9_1621212604192"
+    },
+    {
+      "type": "standard",
+      "title": "exames laboratoriais",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok, estamos lhe encaminhando para o setor de exames laboratoriais."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1621107089482",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1621687968788"
+      },
+      "conditions": "@exames_tipos:Laboratoriais",
+      "dialog_node": "node_9_1621687843877",
+      "previous_sibling": "node_1_1621687583817"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1618670154675",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1621687968788"
+      },
+      "conditions": "#atendente",
+      "dialog_node": "response_10_1621689057455",
+      "previous_sibling": "response_9_1621556422815"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Que tipo de exame você deseja, laboratorial ou de imagem ?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1618670154675",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_3_1621107089482"
+      },
+      "conditions": "#exames",
+      "dialog_node": "response_2_1621118007990",
+      "previous_sibling": "response_6_1618670225677"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "CEP encontrado:<br>📍<? $webhook_result_1.response.logradouro ?> - <? $webhook_result_1.response.bairro ?>, <? $webhook_result_1.response.localidade ?> - <? $webhook_result_1.response.uf ?>, <? $webhook_result_1.response.cep ?>.<br><br>Agora informe o número do seu endereço"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1621387326743",
+      "context": {
+        "cep": "<?input.text?>"
+      },
+      "conditions": "$webhook_result_1",
+      "dialog_node": "response_3_1621387326748",
+      "previous_sibling": "node_7_1621381816025"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "CEP $cep não encontrado - Por favor, tente novamente."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1621387326743",
+      "conditions": "anything_else",
+      "dialog_node": "response_4_1621387326748",
+      "previous_sibling": "response_3_1621387326748"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_8_1621701272181",
+      "context": {},
+      "disabled": true,
+      "conditions": "#afirmativo",
+      "dialog_node": "response_4_1621701582336",
+      "previous_sibling": "handler_1_1621701597096"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Agradecemos seu contato!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1618670154675",
+      "conditions": "#sair",
+      "dialog_node": "response_4_1621703889883",
+      "previous_sibling": "response_9_1621700684727"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "⌚ Horário de Atendimento<br>Segunda a Sexta: 08:00 - 18:00 hs<br>Sábado:                  09:00 - 12:00 hs<br>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1618670154675",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_3_1621703486537"
+      },
+      "conditions": "#horario_funcionamento",
+      "dialog_node": "response_5_1621556033207",
+      "previous_sibling": "response_2_1621118007990"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Qual médico você deseja marcar ? nossos médicos são Dr. Diego Maradona, Dr. João Machado, Dra. Angela Machado, Dr. Augusto Faria, Dra. Clarice Tatiana Correia."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1618670154675",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_3_1618670869981"
+      },
+      "conditions": "#consulta",
+      "dialog_node": "response_6_1618670225677",
+      "previous_sibling": "node_3_1621107089482"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "📍 Estamos localizados na Rua Frederico Moura, 123 - Cidade Nova, Franca - SP, 14401-150."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1618670154675",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_3_1621703486537"
+      },
+      "conditions": "#localização",
+      "dialog_node": "response_9_1621556422815",
+      "previous_sibling": "response_5_1621556033207"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para qual médico você deseja deixar recado ? Dr. Diego Maradona, Dr. João Machado, Dra. Angela Machado, Dr. Augusto Faria, Dra. Clarice Tatiana Correia."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1618670154675",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_7_1621700661207"
+      },
+      "conditions": "#recado",
+      "dialog_node": "response_9_1621700684727",
+      "previous_sibling": "response_10_1621689057455"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_4_1621126541806",
+      "variable": "$periodo",
+      "dialog_node": "slot_1_1621126767366",
+      "previous_sibling": "handler_3_1621126766884"
+    },
+    {
+      "type": "slot",
+      "parent": "node_7_1621700661207",
+      "variable": "$medico",
+      "dialog_node": "slot_1_1621703059904",
+      "previous_sibling": "handler_2_1621703059237"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1621126731211",
+      "variable": "$dias_semanas",
+      "dialog_node": "slot_2_1621211376528",
+      "previous_sibling": "handler_5_1621211375968"
+    },
+    {
+      "type": "slot",
+      "parent": "node_3_1621107089482",
+      "variable": "$exames_tipos",
+      "dialog_node": "slot_2_1621687432578",
+      "previous_sibling": "handler_2_1621118345454"
+    },
+    {
+      "type": "slot",
+      "parent": "node_3_1618670869981",
+      "variable": "$medico",
+      "dialog_node": "slot_4_1621106824606"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_3_1621107089482",
+      "variable": "$exames_imagem",
+      "dialog_node": "slot_4_1621687523087",
+      "previous_sibling": "slot_2_1621687432578"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1621189637582",
+      "dialog_node": "slot_8_1621190567064",
+      "previous_sibling": "handler_4_1621190566526"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_9_1621212604192",
+      "variable": "$plano_operadora",
+      "dialog_node": "slot_9_1621212642368",
+      "previous_sibling": "handler_6_1621212641816"
+    }
+  ],
+  "counterexamples": [
+    {
+      "text": "vou"
+    }
+  ],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "AGENDAMENTO_CHATBOTSv3",
+  "language": "pt-br",
+  "description": ""
+}
