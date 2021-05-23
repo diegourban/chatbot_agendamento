@@ -12,7 +12,7 @@ Para o sistema de métricas foi utilizado o Google Colab.
 
 
 ## O fucionamento
-Foi criado um chatbot para atendimento em um hospital clinica, o usuário terá  as seguinte sopções iniciais:
+Foi criado um chatbot para atendimento em um hospital clinica, o usuário terá  as seguintes opções iniciais:
 - Agendar Consulta
 - Agendar Exames
 - Horário de Funcionamento
@@ -36,3 +36,18 @@ Sair, apenas se despede.
 ## Fluxo de Diálogo
 
 ![Fluxo de Diálogo](chatbot.png)
+
+## Utilização
+
+Abaixo estão descritos os passos para utilização da Skill e do Notebook.
+
+### Skill do Assistente
+1. No Watson, criar uma nova skill a partir do arquivo ![skill-AGENDAMENTO_CHATBOTSv5.json](skill-AGENDAMENTO_CHATBOTSv5.json) disponibilizado nesse repositório;
+2. Associar a skill a um assistente;
+3. Executar o assistente através da opção Preview.
+
+### Notebook do Google Colab
+1. Acessar o Notebook do Google Colab: (https://colab.research.google.com/drive/19DrLrpCVZYGxdfnwgY_shpEC9BHjUmeC?usp=sharing);
+2. No notebook, alterar o valor das variáveis `wa_workspace_id` e `wa_service_api_key` para apontar para a sua skill do Watson; (Opcional)
+3. Executar o notebook;
+4. A medida que for interagindo com o assistente, reexecutar o notebook para coletar os dados atualizados.
